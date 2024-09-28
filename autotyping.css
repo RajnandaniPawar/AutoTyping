@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    /* justify-content: center;
+    align-items: center; */
+    background: linear-gradient(55deg, #d1d1d1, #def34d, #333666);
+    padding-left: 32px; // isse text fix ho jayga 
+}
+
+h1{
+    font-size: 4rem;
+   
+}
+span{
+    color: brown;
+    display: inline-flex;
+    align-items: center;
+}
+
+span::after{
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 55px;
+    background: brown;
+    margin-left: 4px;
+}
+
+h1 span::after{
+   height: 55px;
+}
+
+h2 span::after{
+   height: 30px;
+}
